@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python Turtle — обери свій малюнок</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <div class="hero__badge">Junior IT • Python Turtle generator</div>
+      <h1>Створи свій малюнок у Python Turtle</h1>
+      <p class="hero__text">
+        Відповідай на кілька простих питань, обирай малюнок — і отримуй готовий код,
+        який можна перенести в онлайн-середовище Python Turtle.
+      </p>
+    </header>
+
+    <main class="layout">
+      <section class="card form-card">
+        <h2>Обери свій малюнок</h2>
+
+        <div class="form-grid">
+          <div class="field">
+            <label for="childName">Як тебе звати?</label>
+            <input type="text" id="childName" placeholder="Наприклад: Марко">
+          </div>
+
+          <div class="field">
+            <label for="mainColor">Який колір малюнка хочеш?</label>
+            <select id="mainColor">
+              <option value="gold">Золотий</option>
+              <option value="orange">Помаранчевий</option>
+              <option value="red">Червоний</option>
+              <option value="deepskyblue">Блакитний</option>
+              <option value="purple">Фіолетовий</option>
+              <option value="limegreen">Зелений</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="textColor">Який колір тексту хочеш?</label>
+            <select id="textColor">
+              <option value="purple">Фіолетовий</option>
+              <option value="blue">Синій</option>
+              <option value="darkred">Темно-червоний</option>
+              <option value="green">Зелений</option>
+              <option value="black">Чорний</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="titleText">Що написати під ім’ям?</label>
+            <input type="text" id="titleText" placeholder="Наприклад: Моє сонечко">
+          </div>
+
+          <div class="field field--full">
+            <label>Що хочеш намалювати?</label>
+            <div class="emoji-choices">
+              <button class="emoji-choice active" type="button" data-shape="sun">
+                <span class="emoji">🌞</span>
+                <span class="emoji-title">Сонечко</span>
+                <span class="emoji-text">Яскравий малюнок із променями</span>
+              </button>
+
+              <button class="emoji-choice" type="button" data-shape="star">
+                <span class="emoji">⭐</span>
+                <span class="emoji-title">Зірка</span>
+                <span class="emoji-text">Проста красива зірочка</span>
+              </button>
+
+              <button class="emoji-choice" type="button" data-shape="smile">
+                <span class="emoji">😊</span>
+                <span class="emoji-title">Смайлик</span>
+                <span class="emoji-text">Веселий смайлик із очима та усмішкою</span>
+              </button>
+
+              <button class="emoji-choice" type="button" data-shape="heart">
+                <span class="emoji">💖</span>
+                <span class="emoji-title">Сердечко</span>
+                <span class="emoji-text">Красивий малюнок сердечка в Python Turtle</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button id="demoBtn" class="btn btn--secondary" type="button">Підставити приклад</button>
+          <button id="generateBtn" class="btn btn--primary" type="button">Створити код і малюнок</button>
+        </div>
+
+        <div class="note">
+          Після натискання кнопки ти побачиш приклад малюнка, який буде намальовано,
+          а нижче — готовий Python-код для запуску в онлайн-середовищі.
+        </div>
+      </section>
+
+      <section class="card preview-card">
+        <div class="section-head">
+          <h2>Що буде намальовано</h2>
+        </div>
+
+        <div class="preview-visual">
+          <div id="previewImage" class="preview-visual__image">
+            <img src="sun.png" alt="Сонечко" class="preview-real-image">
+          </div>
+
+        </div>
+      </section>
+
+      <section class="card code-card">
+        <div class="section-head">
+          <h2>Готовий Python-код</h2>
+          <button id="copyBtn" class="btn btn--small" type="button">Скопіювати код</button>
+        </div>
+
+        <pre id="codeOutput" class="code-output"># Тут з’явиться готовий код для Python Turtle</pre>
+      </section>
+
+      <section class="card next-step-card">
+        <h2>Що робити далі</h2>
+
+        <div class="next-steps">
+          <div class="path-card">
+            <h3>Спробувати самостійно</h3>
+            <p>
+              Скопіюй код, перенеси його в онлайн-середовище Python Turtle і подивись,
+              як твій малюнок оживає крок за кроком.
+            </p>
+          </div>
+
+          <div class="path-card path-card--cta">
+            <h3>Хочу зробити більше разом із викладачем</h3>
+            <p>
+              Якщо хочеш не просто вставити код, а зрозуміти, як це працює,
+              і створювати власні ігри та проєкти — запишись на перший безкоштовний урок.
+            </p>
+            <a href="#" class="path-card__button">Записатись на перший безкоштовний урок</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="card instruction-card">
+        <h2>Завдання для допитливих</h2>
+        <div class="instruction-box">
+          <p><strong>1.</strong> Скопіюйте готовий код вище.</p>
+          <p>
+            <strong>2.</strong> Перейдіть на сайт
+            <a href="https://www.codetoday.co.uk/code" target="_blank" rel="noopener noreferrer">CodeToday</a>
+          </p>
+          <p><strong>3.</strong> Вставте код у редактор.</p>
+          <p><strong>4.</strong> Запустіть код через ► (зверху зліва) і подивіться, як черепашка малює вибраний малюнок.</p>
+          <p><strong>5.</strong> Спробуйте змінити текст, кольори або саму фігуру.</p>
+
+          <p class="instruction-cta-message">
+            <strong>Вийшло? Молодець — значить, ти вже можеш створювати власні візуальні проєкти.</strong>
+            <br>
+            <strong>Не вийшло? Нічого страшного.</strong> Приходь до нас — і ми покажемо, як зробити це крок за кроком разом із викладачем.
+          </p>
+
+          <a href="#" class="instruction-cta-button">Записатись на перший безкоштовний урок</a>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
